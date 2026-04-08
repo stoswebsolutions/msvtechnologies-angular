@@ -1,0 +1,181 @@
+/* GENERAL */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f8fafc;
+  color: #1e293b;
+}
+
+/* HERO */
+
+/* ================= PAGE HEADER ================= */
+
+.s1 {
+  padding: 90px 20px;
+  background: linear-gradient(135deg, #0f172a, #1e3a5f, #2563eb);
+  text-align: center;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.s1::before {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+  top: -100px;
+  left: -100px;
+}
+
+.s1::after {
+  content: "";
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  bottom: -80px;
+  right: -80px;
+}
+
+.s1 .fox {
+  font-size: 56px !important;
+  font-weight: 800;
+  margin-bottom: 12px;
+  position: relative;
+  z-index: 2;
+}
+
+.s1 a {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.s1 a:hover {
+  color: #ffffff;
+}
+/* SECTION */
+.contact-section {
+  padding: 80px 0;
+}
+
+/* CARD */
+.contact-card {
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+  height: 100%;
+}
+
+.contact-card h2 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.contact-card .desc {
+  color: #64748b;
+  margin-bottom: 30px;
+}
+
+/* INFO */
+.info .item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.info i {
+  font-size: 20px;
+  color: #2563eb;
+  background: #eff6ff;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.info h5 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.info p {
+  margin: 0;
+  font-size: 14px;
+  color: #64748b;
+}
+
+/* SOCIAL */
+.social {
+  margin-top: 25px;
+}
+
+.social a {
+  display: inline-block;
+  margin-right: 10px;
+  background: #2563eb;
+  color: #fff;
+  padding: 10px 12px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.social a:hover {
+  background: #1e40af;
+}
+
+/* MAP */
+.map-card {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+  height: 100%;
+}
+
+.map-card h3 {
+  padding: 20px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.map-card iframe {
+  width: 100%;
+  height: 500px;
+  border: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .contact-hero h1 {
+    font-size: 42px;
+  }
+
+  .map-card iframe {
+    height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-hero {
+    padding: 90px 15px;
+  }
+
+  .contact-hero h1 {
+    font-size: 32px;
+  }
+
+  .contact-card {
+    padding: 25px;
+  }
+
+  .map-card iframe {
+    height: 300px;
+  }
+}

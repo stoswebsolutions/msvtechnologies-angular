@@ -1,0 +1,361 @@
+/* ================= HERO CAROUSEL ================= */
+
+#heroCarousel {
+  position: relative;
+}
+
+#heroCarousel .carousel-item {
+  position: relative;
+}
+
+.hero-img {
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ================= OVERLAY ================= */
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 18, 36, 0.78) 0%,
+    rgba(0, 32, 63, 0.55) 45%,
+    rgba(0, 0, 0, 0.35) 100%
+  );
+  z-index: 1;
+}
+
+/* ================= HERO CONTENT ================= */
+
+.hero-content {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: auto;
+  width: 90%;
+  max-width: 900px;
+  text-align: center;
+}
+
+.hero-content .sub-title {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 18px;
+}
+
+.hero-content h1 {
+  font-size: 62px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.hero-buttons .btn {
+  min-width: 170px;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.4s ease;
+}
+
+.hero-buttons .btn-primary {
+  background: linear-gradient(135deg, #007bff, #0056d6);
+  border: none;
+  box-shadow: 0 10px 25px rgba(0, 123, 255, 0.35);
+}
+
+.hero-buttons .btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(0, 123, 255, 0.45);
+}
+
+.hero-buttons .btn-light {
+  background: #ffffff;
+  color: #0b2540;
+  border: none;
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.2);
+}
+
+.hero-buttons .btn-light:hover {
+  transform: translateY(-3px);
+}
+
+/* ================= CAROUSEL BUTTONS ================= */
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 60px;
+  height: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+  border-radius: 50%;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.carousel-control-prev {
+  left: 25px;
+}
+
+.carousel-control-next {
+  right: 25px;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 22px;
+  height: 22px;
+}
+
+/* ================= WEBINAR SECTION ================= */
+
+.webinar-section {
+  padding: 80px 0;
+  background: linear-gradient(to right, #f8f9fa, #eef5ff);
+}
+
+.fade-effect {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.fade-effect h1 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #065a9e;
+  margin-bottom: 12px;
+  animation: fadeSoft 3s ease-in-out infinite alternate;
+}
+
+.sub-text {
+  font-size: 17px;
+  color: #5b6470;
+  margin-bottom: 0;
+}
+
+.video-box {
+  width: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+}
+
+.video-box video {
+  width: 100%;
+  display: block;
+  border-radius: 24px;
+}
+
+/* ================= ANIMATION ================= */
+
+@keyframes fadeSoft {
+  0% {
+    opacity: 0.75;
+    transform: translateY(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= LARGE DEVICES ================= */
+
+@media (max-width: 1199px) {
+  .hero-content h1 {
+    font-size: 52px;
+  }
+
+  .fade-effect h1 {
+    font-size: 34px;
+  }
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 991px) {
+  .hero-img {
+    height: 75vh;
+  }
+
+  .hero-content {
+    width: 92%;
+  }
+
+  .hero-content h1 {
+    font-size: 42px;
+    line-height: 1.3;
+  }
+
+  .hero-content .sub-title {
+    font-size: 13px;
+    letter-spacing: 2px;
+  }
+
+  .hero-buttons .btn {
+    min-width: 150px;
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 50px;
+    height: 50px;
+  }
+
+  .webinar-section {
+    padding: 70px 20px;
+  }
+
+  .fade-effect h1 {
+    font-size: 30px;
+  }
+
+  .sub-text {
+    font-size: 15px;
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 767px) {
+  .hero-img {
+    height: 60vh;
+  }
+
+  .hero-content {
+    width: 95%;
+  }
+
+  .hero-content .sub-title {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+  }
+
+  .hero-content h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    max-width: 250px;
+    min-width: unset;
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 42px;
+    height: 42px;
+    top: auto;
+    bottom: 20px;
+    transform: none;
+  }
+
+  .carousel-control-prev {
+    left: 20px;
+  }
+
+  .carousel-control-next {
+    right: 20px;
+  }
+
+  .fade-effect {
+    margin-bottom: 35px;
+  }
+
+  .fade-effect h1 {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+
+  .sub-text {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .video-box {
+    border-radius: 18px;
+  }
+
+  .video-box video {
+    border-radius: 18px;
+  }
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px) {
+  .hero-img {
+    height: 55vh;
+  }
+
+  .hero-content h1 {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+
+  .hero-content .sub-title {
+    font-size: 10px;
+  }
+
+  .hero-buttons .btn {
+    max-width: 100%;
+    font-size: 13px;
+    padding: 11px 18px;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 38px;
+    height: 38px;
+  }
+
+  .fade-effect h1 {
+    font-size: 22px;
+  }
+
+  .sub-text {
+    font-size: 13px;
+  }
+
+  .webinar-section {
+    padding: 50px 15px;
+  }
+}
