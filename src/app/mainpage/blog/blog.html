@@ -1,7 +1,7 @@
 <app-header></app-header>
 <div class="s1">
   <h1 class="display-4 fox" style="font-size: 3.5rem;"><b>Blogs</b></h1>
-  <a href="#" style="text-decoration: none;">Home</a>
+  <a routerLink="/home" routerLinkActive="active" style="text-decoration: none;">Home</a>
   <i class="far fa-square text-primary px-2"></i>
   <a href="#" style="text-decoration: none;">Blogs</a>
 </div>
@@ -118,7 +118,7 @@
          
             <img [src]="imagebaseurl+'images/blog1img.jpg'" style="width: 100px; height: 100px; object-fit: cover;"
             alt=""> 
-          <a href="blog1" class="h5 d-flex align-items-center px-3 mb-0"
+          <a routerLink="/blog1" routerLink="active" class="h5 d-flex align-items-center px-3 mb-0"
             style="background-color: #F6F6F6;text-decoration: none;">Mastering React: A Comprehensive Guide for
             Beginners
           </a>
@@ -126,7 +126,7 @@
         <div class="d-flex mb-3">
           <img [src]="imagebaseurl+'images/blog2img.jpg'" style="width: 100px; height: 100px; object-fit: cover;"
             alt="">
-          <a href="blog2" class="h5 d-flex align-items-center px-3 mb-0"
+          <a  routerLink="active" routerLinkActive="active" class="h5 d-flex align-items-center px-3 mb-0"
             style="background-color: #F6F6F6;text-decoration: none;">Demystifying Node.js: Building Scalable and
             High-Performance Applications
           </a>
@@ -135,7 +135,7 @@
           <img [src]="imagebaseurl+'images/blog3img.jpg'" style="width: 100px; height: 100px; object-fit: cover;"
             alt=""> 
          
-          <a href="blog3" class="h5 d-flex align-items-center px-3 mb-0"
+          <a routerLinkActive="active" class="h5 d-flex align-items-center px-3 mb-0 routerLink=active"
             style="background-color: #F6F6F6;text-decoration: none;">The Complete Guide to Full-Stack Development with
             MERN Stack
           </a>
@@ -146,10 +146,10 @@
     <div class="mb-5">
       <h2 class="mb-4">Tag Cloud</h2>
       <div class="d-flex flex-wrap m-n1">
-        <a href="" class="btn  m-1" style="background-color: #F6F6F6;text-decoration: none;"><b>Training</b></a>
-        <a href="" class="btn  m-1" style="background-color: #F6F6F6;text-decoration: none;"><b>Recruitment</b></a>
-        <a href="" class="btn  m-1" style="background-color: #F6F6F6;text-decoration: none;"><b>IT Consulting</b></a>
-        <a href="" class="btn  m-1" style="background-color: #F6F6F6;text-decoration: none;"><b>Placement</b></a>
+        <a class="btn  m-1" style="background-color: #F6F6F6;text-decoration: none;"><b>Training</b></a>
+        <a class="btn  m-1" style="background-color: #F6F6F6;text-decoration: none;"><b>Recruitment</b></a>
+        <a class="btn  m-1" style="background-color: #F6F6F6;text-decoration: none;"><b>IT Consulting</b></a>
+        <a class="btn  m-1" style="background-color: #F6F6F6;text-decoration: none;"><b>Placement</b></a>
       </div>
     </div>
   </div>

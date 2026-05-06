@@ -7,7 +7,7 @@ import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-blog',
-  imports: [Header,Footer],
+  imports: [Header, Footer, RouterLink],
   templateUrl: './blog.html',
   styleUrl: './blog.css',
 })
