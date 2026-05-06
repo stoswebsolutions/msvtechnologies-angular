@@ -6,10 +6,9 @@ import { Footer } from '../footer/footer';
 
 @Component({
   selector: 'app-service',
-  imports: [RouterLink,Header,Section4,Footer],
+  imports: [Header,Section4,Footer],
   templateUrl: './service.html',
   styleUrl: './service.css',
 })
 export class Service {
-
 }

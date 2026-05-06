@@ -1,6 +1,5 @@
 <section class="partner-section">
   <div class="container">
-
     <div class="partner-header">
       <div class="partner-title">
         <h2>Our Trusted Partners</h2>
@@ -9,47 +8,43 @@
           who trust our services and support our growth journey.
         </p>
       </div>
-
       <div class="carousel-controls">
         <button class="carousel-btn" (click)="scrollLeft()">
           <i class="bi bi-arrow-left"></i>
         </button>
-
         <button class="carousel-btn" (click)="scrollRight()">
           <i class="bi bi-arrow-right"></i>
         </button>
       </div>
     </div>
-
     <div class="partner-carousel">
       <div class="partner-track" #carouselTrack>
-
         <div class="partner-card">
-          <img src="/images/apsonsoft.png" class="partner-logo" alt="Apsonsoft">
+          <img [src]="imageBaseurl+'images/apsonsoft.png'" alt="Apsonsoft">
+        </div>
+        <div class="partner-card">
+          <img [src]="imageBaseurl+'images/icfnews.jpg'" class="partner-logo" alt="ICF News">
+         
         </div>
 
         <div class="partner-card">
-          <img src="/images/icfnews.jpg" class="partner-logo" alt="ICF News">
+          <img [src]="imageBaseurl+'images/mega369.png'" class="partner-logo" alt="Mega369">
         </div>
 
         <div class="partner-card">
-          <img src="/images/mega369.png" class="partner-logo" alt="Mega369">
+          <img [src]="imageBaseurl+'images/stosweb.png'" class="partner-logo" alt="Stosweb">
         </div>
 
         <div class="partner-card">
-          <img src="/images/stosweb.png" class="partner-logo" alt="Stosweb">
+          <img [src]="imageBaseurl+'images/vita.jpg'" class="partner-logo" alt="Vita">
         </div>
 
         <div class="partner-card">
-          <img src="/images/vita.jpg" class="partner-logo" alt="Vita">
+          <img [src]="imageBaseurl+'images/vkare.jpeg'" class="partner-logo" alt="Vkare">
         </div>
 
         <div class="partner-card">
-          <img src="/images/vkare.jpeg" class="partner-logo" alt="Vkare">
-        </div>
-
-        <div class="partner-card">
-          <img src="/images/vmart.png" class="partner-logo" alt="Vmart">
+          <img [src]="imageBaseurl+'images/vmart.png'" class="partner-logo" alt="Vmart">
         </div>
 
       </div>

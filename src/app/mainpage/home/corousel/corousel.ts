@@ -1,4 +1,5 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
+import { environment } from '../../../../environments/environment.prod';
 
 @Component({
   selector: 'app-corousel',
@@ -56,4 +57,5 @@ export class Corousel {
       clearInterval(this.autoScrollInterval);
     }
   }
+  readonly imageBaseurl = environment.apiBaseUrl;
 }

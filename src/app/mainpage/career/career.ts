@@ -6,7 +6,7 @@ import { Footer } from '../footer/footer';
 
 @Component({
   selector: 'app-career',
-  imports: [RouterLink,Header,Section5,Footer],
+  imports: [Header,Section5,Footer],
   templateUrl: './career.html',
   styleUrl: './career.css',
 })

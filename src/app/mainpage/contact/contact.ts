@@ -5,7 +5,7 @@ import { Footer } from '../footer/footer';
 
 @Component({
   selector: 'app-contact',
-  imports: [RouterLink,Header,Footer],
+  imports: [Header,Footer],
   templateUrl: './contact.html',
   styleUrl: './contact.css',
 })
